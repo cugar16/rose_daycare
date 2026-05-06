@@ -1,0 +1,675 @@
+body {
+    margin: 0;
+    padding-top: 110px;
+}
+
+.school-header {
+    font-family: "Lobster Two", sans-serif; 
+    color: orangered;
+    font-size: 35px;
+    font-weight: 1000;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 999999;
+}
+
+.left-section {
+    margin: 0;
+    padding-left: 20px;
+    margin-right: 20px;
+    flex: 2;
+}
+
+nav,ul,li,a {
+    display: inline-block;
+     text-decoration: none;
+    list-style-type: none;
+}
+
+nav a{
+    margin-right: 20px;
+    color: black;
+}
+
+nav a:hover {
+    color: orangered;
+}
+
+.middle-section {
+    flex: 3;
+    justify-content: center;
+    padding: 20px;
+    align-items: end;
+    margin-left: 100px;
+    font-size: 16px;
+    font-family: "Heebo", sans-serif;
+}
+
+.right-section {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex: 1;
+    font-family: "Heebo", sans-serif;
+}
+
+.join {
+    margin-left: 30px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+    border-radius: 20px;
+    border: none;
+    width: 130px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: "Heebo", sans-serif;
+}
+
+.join:hover,.classes-button:hover, .learn-button:hover, .read-button:hover, .contact-us-btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+h3 {
+    font-family: "Lobster Two", sans-serif;
+    color: rgb(39, 37, 37);
+    font-size: 30px;
+}
+
+
+
+.facility-container-header {
+    font-family: "Lobster Two", sans-serif;
+    color: orangered;
+    font-size: 28px;
+    margin: 34px 0 0 0;
+    text-align: center;
+}
+
+.hero-page {
+    background-image: url(images/bubbles.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    height: 800px;
+    padding: 80px 0 0 80px;
+}
+
+
+.hero-page-text {
+    color: white;
+    font-size: 18px;
+    font-family: "Heebo", sans-serif;
+}
+
+
+.hero-section {
+    /* width: 700px; */
+    /* padding-left: 90px;
+    padding-right: 60px;
+    padding-top: 180px; */
+    line-height: 30px;
+    
+    /* h2 styling */
+    font-family: "Lobster Two",sans-serif;
+    color: white;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 66px;
+}
+
+.hero-text-wrap {
+    width: 700px;
+}
+
+
+.learn-button, .classes-button {
+    font-family: "Heebo", sans-serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    margin-right: 20px;
+    margin-top: 35px;
+}
+
+.learn-button {
+    background-color: orangered;
+}
+
+.classes-button {
+    background-color: rgb(39, 37, 37);
+}
+
+
+.sub-hero-container {
+    text-align: center;
+}
+
+.sub-hero-header-text {
+    color: rgb(56, 54, 54);
+    font-size: 18px;
+    font-family: heebo, san-serif;
+}
+
+
+.facilities-grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.facilities-grid-child {
+    box-sizing: border-box;
+}
+
+.facility-text {
+    color: rgb(56, 54, 54);
+    font-size: 16px;
+    /* margin-top: 30px; */
+    /* margin-left: 0; */
+    /* line-height: 30px; */
+    text-align: center;
+    font-family: Heebo, sans-serif;
+}
+
+.facilities-icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: rgb(255, 244, 247);
+    opacity: 0.6;
+    position: relative;
+    margin-left: 70px;
+}
+
+.facilities-container {
+    height: 240px;
+    width: 240px;
+    border-radius: 120px;
+    margin-top: -33px;
+    background-color: rgb(255, 244, 247);
+    /* opacity: 0.6; */
+    /* position: absolute; */
+    align-items: center;
+}
+
+.main-body {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 100px;
+}
+
+.sub-hero-section {
+    margin-bottom: 100px;
+}
+
+.about-section-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    margin-bottom: 250px;
+}
+
+.about-header {
+    width: 560px;
+}
+
+.about-header-text {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    color: rgb(56, 54, 54);
+    font-family: Heebo,sans-serif;
+    font-size: 18px;
+}
+
+.azeez {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.read-button {
+    padding: 16px;
+    width: 160px;
+    height: 60px;
+    border-radius: 70px;
+    font-weight: bold;
+    font-family: Heebo,sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: orangered;
+    border: none;
+}
+
+.about-flex-box {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+
+.ceo-name {
+    font-family: Heebo,sans-serif;
+    font-size: 16px;
+    color: orangered;
+    font-weight: 700;
+    margin-top: 0;
+    margin-left: 15px;
+     margin-bottom: 5px;
+}
+
+.azeez-title {
+    font-family: Heebo,sans-serif;
+    font-size: 14px;
+    color:  rgb(56, 54, 54);
+    margin-top: 0;
+    margin-left: 15px;
+}
+
+.ceo-image {
+    display: flex;
+}
+
+.ceo-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.pool-kids {
+    height: 530px;
+    border-radius: 50%;
+    width: 350px;
+    object-position: center;
+    margin-left: 25px;
+    margin-top: 22px;
+    border: 20px solid rgb(255, 236, 238);
+}
+
+.pool-kids-container {
+    position: relative;
+}
+
+.slide-baby {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-position: center;
+    margin-top: 20px;
+    margin-left: 21px;
+    border: 20px solid rgb(255, 236, 238);
+    position: absolute;
+    bottom: -110px;
+    left: -70px;
+}
+
+.reading-kids {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-position: center;
+    margin-top: 20px;
+    margin-left: 21px;
+    border: 20px solid rgb(255, 236, 238);
+    position: absolute;
+    bottom: -110px;
+    right: -70px;
+}
+
+
+.pool-kids:hover, .slide-baby:hover, .reading-kids:hover {
+    border-color: orangered;
+}
+
+.sleeping {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sleeping-kids-container {
+    z-index: 2000;
+}
+
+.join-us-section {
+    margin-bottom: 120px;
+}
+
+.join-us-section-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.join-us-container {
+    width: 600px;
+    height: 400px;
+    background-color:  rgb(255, 236, 238);
+    padding-left: 90px;
+    margin-left: -25px;
+    border-radius: 10px;
+    padding-right: 40px;
+}
+
+.join-header-text {
+    font-family: Lobster Two,sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.join-us-text {
+    font-family: Heebo,sans-serif;
+    font-size: 18px;
+    color: rgb(102, 99, 99);
+    margin-bottom: 30px;
+    line-height: 36px;
+    width: 600px;
+}
+
+.contact-us-btn {
+    background-color: orangered;
+    padding: 16px 42px;
+    color: white;
+    width: 550px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.exciting-activities-section {
+    margin-bottom: 100px;
+}
+
+.exciting-activities-section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.exciting-activities-header {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.exciting-activities-text {
+    font-family: Heebo,sans-serif;
+    font-size: 18px;
+    color: rgb(102, 99, 99);
+    text-align: center;
+    margin-top: 0;
+}
+
+.exciting-activities-container {
+    text-align: center;
+    margin-left: 310px;
+    margin-right: 310px;
+    margin-bottom: 150px;
+}
+
+.activities-background-container {
+    z-index: 30000;
+    margin-left: 40px;
+}
+
+.activities-image-container {
+    background-color: rgb(255, 236, 238);
+    height: 305px;
+    width: 305px;
+    padding: 16px;
+    border-radius: 50%;
+}
+
+.activities-block-image {
+    width: 273px;
+    height: 273px;
+    border-radius: 50%;
+    margin-top: 14px;
+    margin-left: 14px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.activities-block {
+    width: 408px;
+    height: 145px;
+    background-color: rgb(255, 236, 238);
+    text-align: center;
+    padding-top: 16px;
+    border-radius: 10px;
+    margin-top: -45px;
+}
+
+.activities-container {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.activities-container:hover {
+    transform: translateY(-10px);
+}
+
+.our-clients-header-text {
+    font-family: Lobster Two, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.our-clients-text {
+    font-size: 18px;
+    font-family: Heebo,sans-serif;
+    color: rgb(102, 99, 99);
+    text-align: center;
+    margin-top: 0;
+}
+
+.our-clients-container {
+    margin-left: 310px;
+    margin-right: 310px;
+    margin-bottom: 100px;
+}
+
+.testimony-section {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.testimony-flexbox-container {
+    width: 500px;
+    height: 205px;
+    background-color: rgb(255, 236, 238);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimony-text {
+    font-family: Heebo,sans-serif;
+    font-size: 20px;
+    color: rgb(102, 99, 99);
+    margin-left: 40px;
+}
+
+.client-image {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+.client-profile-container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    height: 93px;
+    margin-left: 40px;
+    width: 500px;
+}
+
+.name-tag {
+    width: 300px;
+    margin-left: -10px;
+}
+
+
+.client-name {
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.client-title {
+    font-size: 18px;
+    font-family: Heebo,sans-serif;
+    color: rgb(102, 99, 99);
+    padding-bottom: 10px;
+}
+
+.sign {
+    font-size: 180px;
+    font-family: Heebo,sans-serif;
+    color: orangered;
+    padding-top: 100px;
+    margin-left: -25px;
+}
+
+.footer-section {
+    background-color: rgb(27, 45, 66);
+    padding: 48px 100px;
+}
+
+.footer-flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgb(82, 82, 82);
+}
+
+.location-flexbox, .telephone-flexbox, .mail-flexbox {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: 290px;
+}
+
+.icons-flexbox {
+    margin-top: 20px;
+}
+
+.footer-heading {
+    color: white;
+    font-family: Lobster Two, sans-serif;
+    font-size: 30px;
+}
+
+.col1-text, .col1-phone-text, .col1-mail-text, .quicklink-text {
+    font-family: Heebo, sans-serif;
+    font-size: 18px;
+    color: rgb(173, 171, 171);
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.twitter, .facebook, .youtube, .instagram {
+    border: 2px solid rgb(173, 171, 171);
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.twitter:hover, .facebook:hover, .youtube:hover, .instagram:hover {
+    background-color: orangered;
+    cursor: pointer;
+    transition: ease-in 0.15s;
+}
+
+.quicklink-container {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: 150px;
+   transition: transform 0.3s ease, color 0.3s ease;
+    margin-bottom: 0;
+}
+
+.quicklink-container:hover, .quicklink-text:hover {
+    transform: scaleX(1.1);
+    cursor: pointer;
+    color: orangered;
+}
+
+.footer-col3-container {
+    margin-left: 100px;
+}
+
+.photo-gallery-flexbox {
+    display: flex;
+    flex-direction: row;
+    width: 330px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photo-grid {
+    width: 72px;
+    height: 72px;
+    border: 5px solid rgb(240, 221, 224);
+    border-radius: 10px;
+}
+
+.footer-rule {
+    color: rgb(65, 64, 64);
+}
+
+.copyright-text {
+    font-family: Heebo,sans-serif;
+    font-size: 16px;
+    color: rgb(143, 142, 142);
+}
+
+.copy {
+    text-decoration: underline;
+    color: white;
+    font-family: Heebo,sans-serif;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.copyright-text, .copy {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
