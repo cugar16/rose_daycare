@@ -125,7 +125,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-.join-btn-link, .join-btn-link:hover, .reachus-link {
+.join-btn-link, .join-btn-link:hover {
     color: white;
 }
 
@@ -133,6 +133,11 @@ h3 {
     font-family: "Lobster Two", sans-serif;
     color: rgb(39, 37, 37);
     font-size: 30px;
+}
+
+.main-body {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .hero-section {
@@ -159,14 +164,15 @@ h3 {
     align-items: center;
 }
 
-.home-link-span, .home-link{
+.home-link-span, .home-link, .pages-link, .page-link {
     color: orangered;
     font-family: Heebo, sans-serif;
     font-size: 18px;
     margin-right: 5px;
+    margin-left: 5px;
 }
 
-.aboutus-link {
+.appointment-link {
     font-family: Heebo, sans-serif;
     font-size: 18px;
     color: white;
@@ -180,198 +186,80 @@ h3 {
     font-family: Heebo, sans-serif;
 }
 
-.main-body {
-    padding-left: 100px;
-    padding-right: 100px;
+.make-appointment-section {
+    margin-bottom: 100px;
 }
 
-.about-section-grid {
+.make-appointment-section-container {
     display: flex;
     flex-direction: row;
-    gap: 200px;
-    margin-bottom: 250px;
-    margin-top: 50px;
-    padding-left: 80px;
-    padding-right: 80px;
-    align-items: center;
+    margin-top: 100px;
 }
 
-
-.about-header {
-    width: 560px;
+.appointment-flexbox {
+    background-color: rgb(255, 236, 238);
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.about-header-text {
+.appointment-header-text {
+    font-family: "Lobster Two", sans-serif;
+    color: rgb(39, 37, 37);
     font-size: 40px;
-    margin-bottom: 20px;
 }
 
-.about-text {
-    color: rgb(56, 54, 54);
-    font-family: Heebo,sans-serif;
+.gurdian-flexbox, .child-flexbox {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.message-textbox {
+    display: block;
+    width: 500px;
+    height: 100px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-family: Heebo, sans-serif;
     font-size: 18px;
-}
-
-.azeez {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    object-fit: cover;
-    display: inline-block;
-}
-
-.read-button {
-    padding: 16px;
-    width: 160px;
-    height: 60px;
-    border-radius: 70px;
-    font-weight: bold;
-    font-family: Heebo,sans-serif;
-    font-size: 16px;
-    color: white;
-    background-color: orangered;
     border: none;
 }
 
-.about-flex-box {
-    display: flex;
-    flex-direction: row;
-    gap: 120px;
-}
-
-.ceo-name {
-    font-family: Heebo,sans-serif;
-    font-size: 16px;
-    color: orangered;
-    font-weight: 700;
-    margin-top: 0;
-    margin-left: 15px;
-     margin-bottom: 5px;
-}
-
-.azeez-title {
-    font-family: Heebo,sans-serif;
-    font-size: 14px;
-    color:  rgb(56, 54, 54);
-    margin-top: 0;
-    margin-left: 15px;
-}
-
-.ceo-image {
-    display: flex;
-}
-
-.ceo-title {
-    display: flex;
-    flex-direction: column;
-}
-
-.book-kids {
-    height: 400px;
-    border-radius: 50%;
-    width: 400px;
-    object-position: center;
-    margin-left: 25px;
-    margin-top: 22px;
-    border: 20px solid rgb(255, 236, 238);
-}
-
-
-.book-kids-container {
-    position: relative;
-}
-
-.slide-baby {
-    height: 230px;
-    width: 230px;
-    border-radius: 50%;
-    object-position: center;
-    margin-top: 20px;
-    margin-left: 21px;
-    border: 20px solid rgb(255, 236, 238);
-    position: absolute;
-    bottom: -110px;
-    left: -70px;
-}
-
-
-.reading-kids {
-    height: 230px;
-    width: 230px;
-    border-radius: 50%;
-    object-position: center;
-    margin-top: 20px;
-    margin-left: 21px;
-    border: 20px solid rgb(255, 236, 238);
-    position: absolute;
-    bottom: -110px;
-    right: -70px;
-}
-
-
-.book-kids:hover, .slide-baby:hover, .reading-kids:hover {
-    border-color: orangered;
-    transition: ease-in 0.25s;
-}
-
-.alpha {
-    width: 600px;
-    height: 400px;
-    object-fit: cover;
+.gurdian-name,.gurdian-email, .child-name, .child-age {
+    width: 240px;
+    padding: 10px;
     border-radius: 10px;
-}
-
-.teacher-container {
-    z-index: 2000;
-}
-
-.teacher-section {
-    margin-bottom: 120px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.teacher-section-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.become-teacher-container {
-    width: 600px;
-    height: 400px;
-    background-color:  rgb(255, 236, 238);
-    padding-left: 90px;
-    margin-left: -25px;
-    border-radius: 10px;
-    padding-right: 40px;
-}
-
-.become-teacher-header {
-    font-family: Lobster Two,sans-serif;
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-.become-teacher-text {
-    font-family: Heebo,sans-serif;
+    font-family: Heebo, sans-serif;
     font-size: 18px;
-    color: rgb(102, 99, 99);
-    margin-bottom: 30px;
-    line-height: 36px;
-    width: 600px;
-}
-
-.reach-us-btn {
-    background-color: orangered;
-    padding: 16px 42px;
-    color: white;
-    width: 550px;
     border: none;
+}
+
+.submit-btn {
+    width: 530px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: Heebo, sans-serif;
     font-size: 18px;
-    font-weight: bold;
-    border-radius: 12px;
-    margin-top: 15px;
+    background-color: orangered;
+    color: white;
+    border: none;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.appointment-image {
+    width: 600px;
+    height: 495px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: -5px;
+    z-index: 233222;
+    border-radius: 10px;
 }
 
 .footer-section {
