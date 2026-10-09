@@ -1,0 +1,3 @@
+max-width: Sreen size set upward
+
+min-width: Screen size set downward

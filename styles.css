@@ -3,6 +3,129 @@ body {
     padding-top: 110px;
 }
 
+.phone-menu {
+    display: none;
+}
+
+.phone-menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .system-menu {
+        display: none;
+    }
+
+    .phone-menu {
+        display: block;
+    }
+
+    .navigation-bar {
+        height: auto;
+        padding: 0 18px 18px;
+    }
+
+    .phone-menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0;
+        gap: 10px;
+    }
+
+    .phone-menu-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        border: 1px solid rgb(220, 220, 220);
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .phone-menu-btn:hover {
+        transform: scale(1.04);
+        background-color: rgb(255, 248, 244);
+        border-color: rgb(245, 195, 160);
+    }
+
+    .phone-menu-btn i {
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        position: absolute;
+    }
+
+    .phone-menu-btn .close-icon {
+        display: none;
+    }
+
+    .phone-menu-items {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .phone-menu-toggle:checked + .phone-menu-btn .bars-icon {
+        opacity: 0;
+        transform: rotate(180deg);
+    }
+
+    .phone-menu-toggle:checked + .phone-menu-btn .close-icon {
+        display: inline-block;
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    .phone-menu-toggle:checked ~ .phone-menu-items {
+        max-height: 650px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .phone-menu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 0 10px;
+        margin: 0;
+    }
+
+    .phone-menu-list li {
+        list-style: none;
+    }
+
+    .phone-menu-list a {
+        display: block;
+        padding: 12px 16px;
+        border-radius: 12px;
+        text-decoration: none;
+        color: rgb(45, 45, 45);
+        font-family: "Heebo", sans-serif;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(240, 240, 240);
+    }
+
+    .phone-menu-list a:hover {
+        background-color: rgb(255, 242, 238);
+        color: orangered;
+    }
+
+    .phone-menu-list .join-btn-link {
+        background-color: orangered;
+        color: white;
+        text-align: center;
+        font-weight: 700;
+        border-color: orangered;
+    }
+}
+
 .school-header, .homepage-link {
     font-family: "Lobster Two", sans-serif; 
     color: orangered;
@@ -727,4 +850,225 @@ h3 {
 .copyright-text, .copy {
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 150px;
+    }
+
+    .navigation-bar {
+        flex-direction: column;
+        align-items: stretch;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999999;
+    }
+
+    .system-menu,
+    .middle-section,
+    .right-section {
+        display: none;
+    }
+
+    .phone-menu-container {
+        padding: 16px 20px;
+    }
+
+    .phone-menu-items {
+        padding: 0 20px 20px;
+    }
+
+    .hero-page {
+        padding: 140px 20px 40px 20px;
+        height: auto;
+    }
+
+    .hero-text-wrap {
+        width: 100%;
+    }
+
+    .hero-section {
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+    .hero-page-text {
+        font-size: 16px;
+    }
+
+    .learn-button,
+    .classes-button {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 16px;
+    }
+
+    .main-body {
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-bottom: 60px;
+    }
+
+    .facilities-grid-container,
+    .about-section-grid,
+    .join-us-section-container,
+    .exciting-activities-section-grid,
+    .testimony-section,
+    .footer-flex-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .facilities-grid-child,
+    .join-us-container,
+    .activities-container,
+    .testimony-flexbox-container,
+    .footer-col1-container,
+    .footer-col2-container,
+    .footer-col3-container,
+    .footer-col4-container {
+        width: 100%;
+    }
+
+    .facilities-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .facilities-container {
+        width: 100%;
+        height: auto;
+        margin-top: 16px;
+        padding: 30px 20px 20px;
+        border-radius: 30px;
+    }
+
+    .about-header {
+        width: 100%;
+    }
+
+    .about-header-text {
+        font-size: 32px;
+    }
+
+    .about-text,
+    .join-us-text,
+    .exciting-activities-text {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .about-flex-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pool-kids,
+    .sleeping,
+    .slide-baby,
+    .reading-kids {
+        width: 100%;
+        height: auto;
+        position: static;
+        margin: 0 auto;
+        border-radius: 24px;
+        border: 16px solid rgb(255, 236, 238);
+    }
+
+    .join-us-container {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+        margin-left: 0;
+    }
+
+    .join-header-text {
+        font-size: 38px;
+    }
+
+    .contact-us-btn {
+        width: 100%;
+    }
+
+    .activities-background-container,
+    .activities-image-container,
+    .activities-block {
+        width: 100%;
+    }
+
+    .activities-image-container {
+        border-radius: 32px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .activities-block-image {
+        width: 100%;
+        height: auto;
+        border-radius: 24px;
+        margin: 0;
+    }
+
+    .activities-block {
+        margin-top: 16px;
+    }
+
+    .exciting-activities-container {
+        margin: 0;
+    }
+
+    .our-clients-container,
+    .testimony-flexbox-container {
+        margin: 0;
+    }
+
+    .testimony-text {
+        margin-left: 0;
+    }
+
+    .client-profile-container {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 16px;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .name-tag {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .sign {
+        font-size: 96px;
+        padding-top: 20px;
+        margin-left: 0;
+    }
+
+    .footer-section {
+        padding: 30px 18px;
+    }
+
+    .footer-flex-container {
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(82, 82, 82);
+    }
+
+    .footer-col3-container {
+        margin-left: 0;
+    }
+
+    .photo-gallery-flexbox {
+        width: 100%;
+    }
+
+    .photo-grid {
+        width: 80px;
+        height: 80px;
+    }
 }
