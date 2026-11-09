@@ -14,12 +14,12 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: rgb(128, 48, 48);
     z-index: 999999;
 }
 
 .left-section {
-    margin: 0;
+    margin: 1px;
     padding-left: 20px;
     margin-right: 20px;
     flex: 2;
@@ -64,7 +64,7 @@ nav a:hover {
     left:0;
     min-width:200px;
     list-style:none;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
 }
 
@@ -90,7 +90,7 @@ nav a:hover {
 .middle-section {
     flex: 3;
     justify-content: center;
-    padding: 20px;
+    padding: 25px;
     align-items: end;
     margin-left: 100px;
     font-size: 16px;
@@ -100,14 +100,14 @@ nav a:hover {
 .right-section {
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 25px;
     flex: 1;
     font-family: "Heebo", sans-serif;
 }
 
 .join {
     margin-left: 30px;
-    padding: 10px;
+    padding: 15px;
     font-size: 14px;
     font-weight: bold;
     color: white;
